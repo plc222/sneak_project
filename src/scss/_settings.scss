@@ -10,7 +10,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "asd", sans-serif;
+  font-family: "Muller", sans-serif;
   background-color: var(--color-white);
 }
 
@@ -22,7 +22,7 @@ a {
   text-decoration: none;
 }
 
-ul {
+.list__reset {
   list-style: none;
   padding: 0;
 }
@@ -54,6 +54,7 @@ ul {
 
 .btn-reset {
   border: none;
+  padding: 0;
   background: transparent;
   cursor: pointer;
 }
@@ -66,4 +67,9 @@ ul {
 
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-gap);
 }
